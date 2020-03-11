@@ -17,7 +17,8 @@ const key_type Fifo_Evictor::evict(){ //Have to find a way to deal with potnetia
         values.pop();
         return lastkey;
     }
-    return values.front();
+    return "";   
+    //return values.front();
 }
 
 
