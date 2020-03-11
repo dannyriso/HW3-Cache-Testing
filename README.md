@@ -2,7 +2,7 @@
 Hannah Hellerstein and Danny Riso's work on CS 389 HW 3, writing unit tests for our own cache and for others' using the same interface.
 
 Note: For each test case, we have multiple Sections (under the Catch2 testcase structure) that tested for various small edgecases/details of a given function. In the event that code failed a test, where they failed would be listed.
-Our Code:
+### Our Code:
 | Test Name     | Description   |Pass/Fail|
 | ------------- |:-------------:| -----:|
 | Testing that set works| Test that the set function for cache can add a key value pair, can overwrite an old value, does not insert new values if maxmem was exceeded (assuming no evictor) | Pass |
