@@ -14,5 +14,49 @@ Note: For each test case, we have multiple Sections (under the Catch2 testcase s
 | Testing for Touch FIFO | Tests that get touches a key and that set touches a key      | Pass |
 | Testing for Evict FIFO | Tests that once a cache is full, the first thing set gets deleted. Tests that evicting something that has already been evicted returns expected result and does not crash. Tests that getting and overwriting do not change eviction order because FIFO      | Pass |
 
+## Testing Other Peoples Code
+Note: For ease sake, we took each groups cache_lib.cc, fifo_evictor.cc, and fifo_evictor.hh to test. 
+### Prasun + Hrishee
+What compilation/linking issues have you encountered (if any)? 
+
+| Test Name     |Pass/Fail|
+| ------------- | -----:|
+| Testing that set works| ? |
+| Testing that get works | ? |
+| Testing that spaceused works | ? |
+| Testing that del works | ? |
+| Testing that reset works | ? |
+| Testing Generic FIFO Evictor without a Cache| ? |
+| Testing for Touch FIFO | ? |
+| Testing for Evict FIFO | ? |
+
+### Kaiyan + Jiarong	
+What compilation/linking issues have you encountered (if any)? 
 
 
+| Test Name     |Pass/Fail|
+| ------------- | -----:|
+| Testing that set works| ? |
+| Testing that get works | ? |
+| Testing that spaceused works | ? |
+| Testing that del works | ? |
+| Testing that reset works | ? |
+| Testing Generic FIFO Evictor without a Cache| ? |
+| Testing for Touch FIFO | ? |
+| Testing for Evict FIFO | ? |
+
+
+### Mason+Sebastian
+What compilation/linking issues have you encountered (if any)? 
+
+
+| Test Name     |Pass/Fail|
+| ------------- | -----:|
+| Testing that set works| ? |
+| Testing that get works | ? |
+| Testing that spaceused works | ? |
+| Testing that del works | ? |
+| Testing that reset works | ? |
+| Testing Generic FIFO Evictor without a Cache| ? |
+| Testing for Touch FIFO | ? |
+| Testing for Evict FIFO | ? |
