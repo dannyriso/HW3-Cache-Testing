@@ -33,20 +33,20 @@ There was also issue where, upon first trying to test this code, the test would 
 | Testing for Touch FIFO | Pass |
 | Testing for Evict FIFO | Fail, in multiple places "Simple deletion without outside meddling", "Evicting something that has been deleted", and "Testing for proper eviction order". The last one actually caused a segfault because we think it's related to the fact that they did not account for the implicit '\0' character at the end of every value-string, which might cause problems.   |
 
-### Kaiyan + Jiarong	
+### Max + Kai	
 What compilation/linking issues have you encountered (if any)? 
-
+No initial compilation errors!
 
 | Test Name     |Pass/Fail|
 | ------------- | -----:|
-| Testing that set works| ? |
-| Testing that get works | ? |
-| Testing that spaceused works | ? |
-| Testing that del works | ? |
-| Testing that reset works | ? |
-| Testing Generic FIFO Evictor without a Cache| ? |
-| Testing for Touch FIFO | ? |
-| Testing for Evict FIFO | ? |
+| Testing that set works| Pass |
+| Testing that get works | Pass |
+| Testing that spaceused works | Pass |
+| Testing that del works | Pass |
+| Testing that reset works | Fail, seemingly it does not clear their memory used value.  |
+| Testing Generic FIFO Evictor without a Cache| Pass |
+| Testing for Touch FIFO | Pass |
+| Testing for Evict FIFO | Fail, because once you evict something, the evictor no longer allows you to keep anything in the cache.  |
 
 
 ### Mason+Sebastian
