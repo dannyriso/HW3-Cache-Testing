@@ -17,7 +17,7 @@ const key_type LRU_Evictor::evict(){
         values.pop_front();
         return lastkey;
     }
-    return values.front();
+    return "";
 }
 
 
