@@ -2,6 +2,7 @@
 Hannah Hellerstein and Danny Riso's work on CS 389 HW 3, writing unit tests for our own cache and for others' using the same interface.
 
 Note: For each test case, we have multiple Sections (under the Catch2 testcase structure) that tested for various small edgecases/details of a given function. In the event that code failed a test, where they failed would be listed.
+Note: In writing our tests, we noticed some bugs in our code (in the transfer over from HW2 to HW3) that we changed here. Our code test below is based on the HW3 code in this repository. However, we gave our HW2 code for everyone else to test, so we expect our code to fail in some respects in other specific tests. 
 ### Our Code:
 | Test Name     | Description   |Pass/Fail|
 | ------------- |:-------------:| -----:|
@@ -48,15 +49,15 @@ What compilation/linking issues have you encountered (if any)?
 
 ### Mason+Sebastian
 What compilation/linking issues have you encountered (if any)? 
-
+During compilation, there was an inssue in that they used Fifo_evictor for constructor instead of our Fifo_Evictor. Also in their Cache.get, they had an unused variable which registered as an error to us. No other compilation errors, nor did we get any linking errors. 
 
 | Test Name     |Pass/Fail|
 | ------------- | -----:|
-| Testing that set works| ? |
-| Testing that get works | ? |
-| Testing that spaceused works | ? |
-| Testing that del works | ? |
-| Testing that reset works | ? |
-| Testing Generic FIFO Evictor without a Cache| ? |
-| Testing for Touch FIFO | ? |
-| Testing for Evict FIFO | ? |
+| Testing that set works| Pass |
+| Testing that get works | Fail, in "sizetype is getting changed", as val_size does not get changed in their implementation |
+| Testing that spaceused works | Pass |
+| Testing that del works | Pass |
+| Testing that reset works | Pass |
+| Testing Generic FIFO Evictor without a Cache| Fail, in "Does eviction work when there is nothing in evictor?" because they never output a "" in their fifo_evictor.cc |
+| Testing for Touch FIFO | Pass |
+| Testing for Evict FIFO | Pass |
